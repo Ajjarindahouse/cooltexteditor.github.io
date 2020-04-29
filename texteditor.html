@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Cool Text Editor</title>
+	<link rel="stylesheet" type="text/css" href="texteditor.css">
+	<link href="https://fonts.googleapis.com/css2?family=Muli:wght@300&display=swap" rel="stylesheet"> <!-- Muli -->
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!-- Lato	 -->
+	<script src="https://kit.fontawesome.com/dda8e16411.js" crossorigin="anonymous"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<script src="texteditor.js"></script>
+</head>
+
+<body>
+
+	<h1 class="greeting">Cool Text Editor</h1>
+
+	<div class="sidebar">
+		
+		<div class="content">
+
+			<div class="firstrow"> <!-- FIRST ROW --> <!-- FIRST ROW --> <!-- FIRST ROW -->
+				<button onclick="bold()" id="bold">B</button> 
+				<button onclick="italic()"  id="italic" ><i class="fas fa-italic"></i> </button>
+				<button onclick="underline()" id="underline"><i class="fas fa-underline"></i></button>
+				<button onclick="myFunction()" id="colourChange"> A</button>
+				
+				<div  id="colourPanel">
+					<button onclick="black()" class="black"></button>
+					<button onclick="red()" class="red"></button>
+					<button onclick="orange()" class="orange"></button>
+					<button onclick="blue()" class="blue"></button>	
+					<br>
+					<button onclick="darkblue()" class="darkblue"></button>		
+					<button onclick="green()" class="green"></button>				
+					<button onclick="darkgreen()" class="darkgreen"></button>				
+					
+				</div>
+
+				<button onclick="left()" id="leftalign"><i  class="fas fa-align-left"></i></button>
+				<button onclick="center()" id="centeralign"  class="fas fa-align-center"></i></button>
+				<button onclick="right()" id="rightalign"  class="fas fa-align-right"></i></button>
+				<button onclick="just()" id="justify"  class="fas fa-align-justify"></i></button> 
+
+			</div>	<!--END OF FIRST ROW-->
+			
+			<br>
+
+
+			<button id="fontsize" onclick="mad()">Font Size <i style="line-height: 58.5%; margin-left: 1%;" class="fas fa-chevron-down"></i></button>
+
+			<div id="sizes">	
+				<button data-yes style="font-size: 0.6944444444444444vw;" onclick="ten() " id="ten">10px</button>
+				<button data-yes style="font-size: 0.8333333333333334vw;" onclick="twelve()" id="twelve">12px</button>
+				<button data-yes style="font-size:  0.9722222222222222vw;"	onclick="four()"	id="fourteen">14px</button>
+				<button data-yes style="font-size: 1.25vw;" onclick="eight()" id="eighteen" class="selectedSize">18px</button>
+				<button data-yes style="font-size: 1.6666666666666667vw;" onclick="twenty()" id="twentyfour">24px</button>
+				<button data-yes style="font-size: 2.0833333333333335vw;" onclick="thirty()" id="thirty">30px</button>
+				
+			</div>
+
+			<button id="font" onclick="fonter()">Choose Font <i style="line-height: 58.5%; margin-left: 1%;" class="fas fa-chevron-down"></i></button>
+
+				<div id="fonts">
+					<button id="verdana" onclick="verdana()" class="selectedFont" style="font-family: verdana !important;">Verdana</button>
+					<button id="helvetica" onClick="please()" style="font-family: helvetica;">Helvetica</button> 
+					<button   onClick="pleases()" style="font-family: arial;" id="arial">Arial</button>
+					<button onclick="times()" id="timesnew" style="font-family: Times New Roman;">Times New Roman</button>
+					<button onclick="cour()"id="calibri" style="font-family: Courier New;">Courier New</button>
+					<button id="treb" onclick="treber()" tyle="font-family: Trebuchet MS;">Trebuchet MS</button>
+				</div>
+
+				<p id="createLink" onclick="link()">Caps Lock <i id="check" style="position: absolute; margin-top: -3%; margin-left: 37%; background-color: #fff; padding:
+				10px; border-radius: 100%; color: #fff;" class="fas fa-check"></i></p>
+
+
+
+		</div>	<!-- END OF THE CONTENT-->
+
+
+	</div> <!-- END OF SIDEBAR END END END END-->
+
+
+
+
+
+
+	<div class="overlay">
+		
+
+	</div>
+
+	<textarea id="textArea">Type Something Here! </textarea> 
+		
+	
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
+
+
